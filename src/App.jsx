@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown, faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <nav id="primary">
-        <h3>Arcya Commercial Corporation</h3>
+        <h3 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Arcya Commercial Corporation</h3>
         <div className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}>
           <div></div>
           <div></div>
@@ -33,7 +33,7 @@ function App() {
       <header id="home" className="fade-in">
         <div className="header-subtitle">WELCOME TO</div>
         <h1>ARCYA COMMERCIAL CORPORATION</h1>
-        <div className="arrow">
+        <div className="arrow" onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}>
           <FontAwesomeIcon icon={faChevronDown} />
         </div>
       </header>
@@ -50,10 +50,9 @@ function App() {
         <div className="contact-container">
           <div className="contact-info">
             <h3>Get in Touch:</h3>
-            <p>Tel: 123-456-7890</p>
-            <p>Email: info@mysite.com</p>
-            <p>Echelon Tower, 2100 Mabini St</p>
-            <p>Malate, Manila</p>
+            <p><FontAwesomeIcon icon={faPhone} /> Tel: 123-456-7890</p>
+            <p><FontAwesomeIcon icon={faEnvelope} /> Email: info@mysite.com</p>
+            <p><FontAwesomeIcon icon={faMapMarkerAlt} /> Echelon Tower, 2100 Mabini St, Malate, Manila</p>
           </div>
           <div className="contact-form">
             <h3>Contact Us:</h3>

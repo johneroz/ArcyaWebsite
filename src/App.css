@@ -37,6 +37,7 @@ nav h3 {
   font-family: 'Hogarth Script', cursive;
   font-size: 2.4em;
   margin-left: 1em;
+  cursor: pointer;
 }
 
 nav ul {
@@ -109,7 +110,10 @@ nav ul li a:hover:after {
 
 @media (max-width: 600px) {
   .hamburger {
-    display: flex;
+    display: flex; 
+  }
+  nav {
+    background-color: rgba(0, 0, 0, 0.8);
   }
 
   nav h3 {
@@ -132,7 +136,7 @@ nav ul li a:hover:after {
   }
 
   nav ul.active {
-    display: flex;
+    display:flex;
   }
 
   nav ul li {
@@ -199,6 +203,7 @@ header h1 {
   font-size: 2em;
   color: #ffffff;
   animation: bounce 2s infinite;
+  cursor: pointer;
 }
 
 @keyframes bounce {
@@ -213,7 +218,7 @@ header h1 {
   }
 }
 
-section {
+#about, #portfolio {
   padding: 60px 20px;
   min-height: 100vh;
   margin-top: 50px;
@@ -226,7 +231,7 @@ section {
 #contact {
   background-color: #333;
   color: #f0f0f0;
-  padding: 40px 20px;
+  padding: 40px 40px;
 }
 
 .contact-container {
@@ -249,6 +254,12 @@ section {
 .contact-info p {
   margin: 5px 0;
   color: #f0f0f0;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info p svg {
+  margin-right: 10px;
 }
 
 .contact-form label {
