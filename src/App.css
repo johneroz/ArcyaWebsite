@@ -231,7 +231,7 @@ header h1 {
 #contact {
   background-color: #333;
   color: #f0f0f0;
-  padding: 40px 40px;
+  padding: 40px 20px; 
 }
 
 .contact-container {
@@ -252,10 +252,11 @@ header h1 {
 }
 
 .contact-info p {
-  margin: 5px 0;
+  margin: 25px 0;
   color: #f0f0f0;
   display: flex;
-  align-items: center;
+  margin-left: 50px;
+  
 }
 
 .contact-info p svg {
@@ -269,7 +270,7 @@ header h1 {
 }
 
 .contact-form input, .contact-form textarea {
-  width: 100%;
+  width: 80%;
   padding: 10px;
   margin-top: 5px;
   margin-bottom: 10px;
@@ -277,6 +278,7 @@ header h1 {
   border-radius: 5px;
   background-color: #444;
   color: #f0f0f0;
+
 }
 
 .contact-form button {
@@ -286,6 +288,7 @@ header h1 {
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+  display: flex;
 }
 
 .contact-form button:hover {
@@ -294,7 +297,7 @@ header h1 {
 
 #contact p {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px; 
   color: #f0f0f0;
 }
 
