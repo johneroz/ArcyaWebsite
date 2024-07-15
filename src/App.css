@@ -36,7 +36,7 @@ nav h3 {
   padding: 5px 0;
   font-family: 'Hogarth Script', cursive;
   font-size: 2.4em;
-  margin-left: 0;
+  margin-left: 1em;
 }
 
 nav ul {
@@ -78,14 +78,13 @@ nav ul li a:hover:after {
   width: 100%;
 }
 
-/* Hamburger menu styles */
 .hamburger {
   display: none;
   flex-direction: column;
   cursor: pointer;
   position: absolute;
   right: 50px;
-  top: 30px;
+  top: 30px; /* Adjusted to be inside the menu */
 }
 
 .hamburger div {
@@ -96,7 +95,6 @@ nav ul li a:hover:after {
   transition: all 0.3s ease;
 }
 
-/* Style for when the menu is open */
 .hamburger.active div:nth-child(1) {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
@@ -109,11 +107,9 @@ nav ul li a:hover:after {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* Mobile menu styles */
 @media (max-width: 600px) {
   .hamburger {
     display: flex;
-    justify-content: flex-end;
   }
 
   nav h3 {
@@ -122,16 +118,15 @@ nav ul li a:hover:after {
 
   nav ul {
     flex-direction: column;
-    width: 50%;
+    width: 40%;
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.8);
     display: none;
     justify-content: flex-start;
     padding-top: 60px;
-    
   }
 
   nav ul.active {

@@ -4,26 +4,30 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
 
 function App() {
-  const [menuActive, setMenuActive] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  const handleHamburgerClick = () => {
-    setMenuActive(!menuActive);
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
   };
 
   return (
     <div className="App">
       <nav id="primary">
         <h3>Arcya Commercial Corporation</h3>
-        <div className={`hamburger ${menuActive ? 'active' : ''}`} onClick={handleHamburgerClick}>
+        <div className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}>
           <div></div>
           <div></div>
           <div></div>
         </div>
-        <ul className={menuActive ? 'active' : ''}>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul className={menuOpen ? 'active' : ''}>
+          <li><a href="#home" onClick={closeMenu}>Home</a></li>
+          <li><a href="#about" onClick={closeMenu}>About</a></li>
+          <li><a href="#portfolio" onClick={closeMenu}>Portfolio</a></li>
+          <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
         </ul>
       </nav>
       <header id="home" className="fade-in">
