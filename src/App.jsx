@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
+import Home from './components/Home';
+import About from './components/About';
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,64 +20,30 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <nav id="primary">
-        <h3 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Arcya Commercial Corporation</h3>
-        <div className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <ul className={menuOpen ? 'active' : ''}>
-          <li><a href="#home" onClick={closeMenu}>Home</a></li>
-          <li><a href="#about" onClick={closeMenu}>About</a></li>
-          <li><a href="#portfolio" onClick={closeMenu}>Portfolio</a></li>
-          <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
-        </ul>
-      </nav>
-      <header id="home" className="fade-in">
-        <div className="header-subtitle">WELCOME TO</div>
-        <h1>ARCYA COMMERCIAL CORPORATION</h1>
-        <div className="arrow" onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}>
-          <FontAwesomeIcon icon={faChevronDown} />
-        </div>
-      </header>
-      <section id="about" className="fade-in">
-        <h2>About Us</h2>
-        <p>About us content...</p>
-      </section>
-      <section id="portfolio" className="fade-in">
-        <h2>Our Portfolio</h2>
-        <p>Portfolio content...</p>
-      </section>
-      <section id="contact" className="fade-in">
-        <h2>Contact Us</h2>
-        <div className="contact-container">
-          <div className="contact-info">
-            <h3>Get in Touch:</h3>
-            <p><FontAwesomeIcon icon={faPhone} /> Tel: 123-456-7890</p>
-            <p><FontAwesomeIcon icon={faEnvelope} /> Email: info@mysite.com</p>
-            <p><FontAwesomeIcon icon={faMapMarkerAlt} /> Echelon Tower, 2100 Mabini St, Malate, Manila</p>
+    <Router>
+      <div className="App">
+        <nav id="primary">
+          <h3 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Arcya Commercial Corporation</h3>
+          <div className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}>
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
-          <div className="contact-form">
-            <h3>Contact Us:</h3>
-            <form>
-              <label htmlFor="name">Enter Your Name *</label>
-              <input type="text" id="name" name="name" placeholder="Name" />
-              
-              <label htmlFor="email">Enter Your Email *</label>
-              <input type="email" id="email" name="email" placeholder="Email" />
-              
-              <label htmlFor="message">Enter Your Message *</label>
-              <textarea id="message" name="message" placeholder="Message"></textarea>
-              
-              <button type="submit">Send</button>
-            </form>
-          </div>
-        </div>
-        <p>© 2024 All Rights Reserve</p>
-      </section>
-    </div>
+          <ul className={menuOpen ? 'active' : ''}>
+            <li><Link to="/" onClick={closeMenu}>Home</Link></li>
+            <li><Link to="/about" onClick={closeMenu}>About</Link></li>
+            <li><Link to="/portfolio" onClick={closeMenu}>Portfolio</Link></li>
+            <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
+          </ul>
+        </nav>
+        <Routes>
+          <Route path="/" element={<><Home /><Contact/></>} />
+          <Route path="about/" element={<><About /><Contact /></>} />
+          <Route path="/portfolio" element={<><Portfolio /><Contact /></>} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
