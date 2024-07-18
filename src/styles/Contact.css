@@ -1,19 +1,20 @@
 #contact {
   background-image: url('../assets/images/ContactBackground.jpg');
-  background-size:cover;
-  background-position:center;
+  background-size: cover;
+  background-position: center;
   color: #f0f0f0;
-  padding: 60px 20px;
+  padding: 100px 20px 60px; 
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+
 .contact-container {
   background-color: transparent;
   padding: 20px;
   border-radius: 10px;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
@@ -49,13 +50,13 @@
 }
 
 .contact-form input, .contact-form textarea {
-  width: 80%;
+  width: 100%; 
   padding: 10px;
   margin-top: 5px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color:hsl(0, 0%, 25%);
+  background-color: hsl(0, 0%, 25%);
   color: #f0f0f0;
 }
 
@@ -68,6 +69,8 @@
   cursor: pointer;
   margin-top: 10px;
   display: flex;
+  align-items: center; 
+  justify-content: center; 
 }
 
 .contact-form button:hover {

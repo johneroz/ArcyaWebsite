@@ -6,7 +6,6 @@ import '../styles/Contact.css';
 function Contact() {
   return (
     <section id="contact" className="fade-in">
-      
       <div className="contact-container">
         <div className="contact-info">
           <h3>Get in Touch:</h3>
