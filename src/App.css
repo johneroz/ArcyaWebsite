@@ -36,7 +36,7 @@ nav h3 {
   margin: 0;
   padding: 5px 0;
   font-family: 'Hogarth Script', cursive;
-  font-size: 1.8em;  /* Adjusted for better responsiveness */
+  font-size: 2em;  
   margin-left: 1em;
   cursor: pointer;
 }
@@ -98,8 +98,8 @@ nav.scrolled {
   flex-direction: column;
   cursor: pointer;
   position: absolute;
-  right: 50px;  /* Adjusted for better responsiveness */
-  top: 15px;  /* Adjusted for better responsiveness */
+  right: 50px;  
+  top: 15px;  
 }
 
 .hamburger div {
@@ -129,7 +129,8 @@ nav.scrolled {
 
   nav h3 {
     margin-right: 3em;
-    font-size: 2em;  /* Adjusted for better responsiveness */
+    font-size: 2em;  
+    
   }
 
   nav ul {
