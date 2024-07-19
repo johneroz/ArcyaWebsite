@@ -9,6 +9,13 @@
   align-items: center;
 }
 
+.map-container {
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
 
 .contact-container {
   background-color: transparent;

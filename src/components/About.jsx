@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import '../styles/About.css';
-import aboutImage1 from '../assets/AboutImages/aboutImage1.jpg'; // Update the path as necessary
-import aboutImage2 from '../assets/AboutImages/aboutImage2.jpg'; // Update the path as necessary
+import aboutImage1 from '../assets/AboutImages/aboutImage1.jpg'; 
+import aboutImage2 from '../assets/AboutImages/aboutImage2.jpg'; 
 
 function About() {
   const [isModalOpen, setModalOpen] = useState(false);
   const [modalImage, setModalImage] = useState(null);
 
+  
   const handleImageClick = (imageSrc) => {
     setModalImage(imageSrc);
     setModalOpen(true);

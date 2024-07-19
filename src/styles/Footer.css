@@ -34,7 +34,7 @@
   .footer-section li,
   .footer-section a {
     color: #ccc;
-    margin: 5px 0;
+    margin: 8px 0;
     text-decoration: none;
   }
   
@@ -44,17 +44,16 @@
   }
   
   .footer-section ul li {
-    margin: 5px 0;
+    margin: 8px 0;
   }
   
   .footer-section ul li a:hover {
     text-decoration: underline;
   }
-  
-  .footer-section .logo-section p {
-    max-width: 300px;
+  .credits p{
+    margin-top: 10px 0;
+    display: absolute;
   }
-  
   @media (max-width: 768px) {
     .footer-container {
       flex-direction: column;

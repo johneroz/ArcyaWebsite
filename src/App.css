@@ -13,7 +13,7 @@ body, html {
   background: url(assets/images/background.jpg) no-repeat center center fixed;
   background-size: cover;
   background-blend-mode: multiply;
-  background-color: rgb(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   color: #f0f0f0;
   height: 100%;
 }
@@ -122,61 +122,43 @@ nav.scrolled {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
   .hamburger {
     display: flex;
   }
 
   nav h3 {
-    top: 10%;
-    margin-top: 3%;
-    margin-right: 30%;
+    margin-left: 1em;
   }
 
   nav ul {
     flex-direction: column;
-    width: 40%;
+    width: 60%;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.9);
-    display: none;
+    display: flex;
     justify-content: flex-start;
     padding-top: 70px;
+    transition: left 0.3s ease;
   }
 
   nav ul.active {
-    display: flex;
+    left: 0;
   }
 
   nav ul li {
     margin: 10px 0;
     width: 100%;
+    text-align: center;
   }
 
   nav ul li a {
     padding: 10px 20px;
     width: 100%;
     display: block;
-  }
-}
-
-@media (max-width: 1024px) {
-  nav h3 {
-    font-size: 2em;
-  }
-}
-
-@media (max-width: 768px) {
-  nav h3 {
-    font-size: 1.9em;
-  }
-}
-
-@media (max-width: 480px) {
-  nav h3 {
-    font-size: 1.8em;
   }
 }
 
