@@ -79,14 +79,15 @@ nav ul li a:after {
   position: absolute;
   width: 0;
   height: 2px;
-  left: 0;
+  left: 50%;
   bottom: 0;
   background-color: #a67c52;
-  transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
 }
 
 nav ul li a:hover:after {
   width: 100%;
+  left: 0;
 }
 
 nav.scrolled {
@@ -130,7 +131,6 @@ nav.scrolled {
   nav h3 {
     margin-right: 3em;
     font-size: 2em;  
-    
   }
 
   nav ul {
@@ -161,6 +161,23 @@ nav.scrolled {
     padding: 10px 20px;
     width: 100%;
     display: block;
+  }
+
+  nav ul li a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    background-color: #a67c52;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+  }
+
+  nav ul li a:hover:after {
+    width: 85%;
+    left: 0;
   }
 }
 
