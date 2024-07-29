@@ -16,7 +16,7 @@ const Footer = () => {
         </div>
         <div className="footer-section">
           <h4>Location</h4>
-          <p>Echelon Tower, 2100 Mabini St, Malate, Manila</p>
+          <p>Room 301 Echelon Tower Condominium, 2100 A. Mabini St, Malate, Manila</p>
           <p>Philippines</p>
         </div>
         <div className="footer-section">

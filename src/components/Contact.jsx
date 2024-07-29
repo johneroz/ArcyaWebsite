@@ -22,7 +22,7 @@ function Contact() {
           <h3>Get in Touch:</h3>
           <p><FontAwesomeIcon icon={faPhone} /> Tel: 632-8521-6896</p>
           <p><FontAwesomeIcon icon={faEnvelope} /> Email: info@mysite.com</p>
-          <p><FontAwesomeIcon icon={faMapMarkerAlt} /> Echelon Tower Branch, 2100 Mabini St, Malate, Manila</p>
+          <p><FontAwesomeIcon icon={faMapMarkerAlt} /> Room 301 Echelon Tower Condominium, 2100 A. Mabini St, Malate, Manila</p>
         </div>
         <div className="contact-form">
           <h3>Contact Us:</h3>
@@ -37,7 +37,7 @@ function Contact() {
             <input type="phone" id="phone" name="phone" placeholder="Enter Your Phone Number" />
 
             <label htmlFor="message">Enter Your Message *</label>
-            <textarea id="message" name="message" placeholder="How can i help you"></textarea>
+            <textarea id="message" name="message" placeholder="Inquiries"></textarea>
 
             <button type="submit">Send</button>
           </form>
