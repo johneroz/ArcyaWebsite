@@ -13,7 +13,7 @@ body, html {
   background: url(assets/images/background.jpg) no-repeat center center fixed;
   background-size: cover;
   background-blend-mode: multiply;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   color: #f0f0f0;
   height: 100%;
   box-sizing: border-box;
