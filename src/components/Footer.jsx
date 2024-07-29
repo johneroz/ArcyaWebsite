@@ -5,7 +5,6 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-     
         <div className="footer-section">
           <h4>Useful Links</h4>
           <ul>
@@ -24,6 +23,9 @@ const Footer = () => {
           <h4>Contact Us</h4>
           <p>815-515-2603</p>
           <p>company@domain.com</p>
+        </div>
+        <div className="footer-section-credits">
+          <p>© Arcya Commercial Corporation. 2024 All Rights Reserved</p>
         </div>
       </div>
     </footer>

@@ -27,11 +27,14 @@ function Contact() {
         <div className="contact-form">
           <h3>Contact Us:</h3>
           <form>
-            <label htmlFor="name">Enter Your Name *</label>
-            <input type="text" id="name" name="name" placeholder="Name" />
+            <label htmlFor="name">Name *</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name" />
 
-            <label htmlFor="email">Enter Your Email *</label>
-            <input type="email" id="email" name="email" placeholder="Email" />
+            <label htmlFor="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email" />
+
+            <label htmlFor="phone">Phone *</label>
+            <input type="phone" id="phone" name="phone" placeholder="Enter Your Phone Number" />
 
             <label htmlFor="message">Enter Your Message *</label>
             <textarea id="message" name="message" placeholder="How can i help you"></textarea>
@@ -40,7 +43,6 @@ function Contact() {
           </form>
         </div>
       </div>
-      <p>© Aryca Commercial Corporation. 2024 All Rights Reserved</p>
     </section>
   );
 }
