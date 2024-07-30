@@ -47,7 +47,7 @@
 }
 
 .contact-info p svg {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .contact-form label {
@@ -68,7 +68,7 @@
 }
 
 .contact-form button {
-  background-color: #c39b77;
+  background-color: rgba(46, 1, 1, 0.9);
   color: white;
   border: none;
   padding: 10px 20px;
@@ -81,7 +81,7 @@
 }
 
 .contact-form button:hover {
-  background-color: #a67c52;
+  background-color: rgba(46, 1, 1, 0.5);
 }
 
 #contact p {
