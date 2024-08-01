@@ -98,6 +98,17 @@ nav ul li a:hover:after {
   left: 0;
 }
 
+@media (min-width: 1025px) {
+  nav ul li a.active:after {
+    width: 100%;
+    left: 0;
+  }
+
+  nav ul li a.active {
+    color: #a67c52;
+  }
+}
+
 nav.scrolled {
   background-color: rgba(46, 1, 1, 0.9);
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 function Navigation({ menuOpen, toggleMenu, closeMenu, scrolled }) {
   const navigate = useNavigate();
@@ -24,10 +24,10 @@ function Navigation({ menuOpen, toggleMenu, closeMenu, scrolled }) {
         <div></div>
       </div>
       <ul className={menuOpen ? 'active' : ''}>
-        <li><Link to="/" onClick={handleHomeClick}>Home</Link></li>
-        <li><Link to="/about" onClick={closeMenu}>About</Link></li>
-        <li><Link to="/portfolio" onClick={closeMenu}>Portfolio</Link></li>
-        <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
+        <li><NavLink to="/" onClick={handleHomeClick} className={({ isActive }) => (isActive ? 'active' : '')}>Home</NavLink></li>
+        <li><NavLink to="/about" onClick={closeMenu} className={({ isActive }) => (isActive ? 'active' : '')}>About</NavLink></li>
+        <li><NavLink to="/portfolio" onClick={closeMenu} className={({ isActive }) => (isActive ? 'active' : '')}>Portfolio</NavLink></li>
+        <li><NavLink to="/contact" onClick={closeMenu} className={({ isActive }) => (isActive ? 'active' : '')}>Contact</NavLink></li>
       </ul>
     </nav>
   );

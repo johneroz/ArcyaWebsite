@@ -20,9 +20,10 @@ function Contact() {
       <div className="contact-container">
         <div className="contact-info">
           <h3>Get in Touch:</h3>
-          <p><FontAwesomeIcon icon={faPhone} /> Tel: 632-8521-6896</p>
-          <p><FontAwesomeIcon icon={faEnvelope} /> Email: info@mysite.com</p>
-          <p><FontAwesomeIcon icon={faMapMarkerAlt} /> Room 301 Echelon Tower Condominium, 2100 A. Mabini St, Malate, Manila</p>
+          <p><FontAwesomeIcon icon={faPhone} />632-8521-6896</p>
+          <p><FontAwesomeIcon icon={faEnvelope} /><a href="mailto:info@mysite.com">info@mysite.com</a></p>
+          <p><FontAwesomeIcon icon={faMapMarkerAlt} /> Room 301 Echelon Tower Condominium,
+          <br /> 2100 A. Mabini St, Malate, Manila</p>
         </div>
         <div className="contact-form">
           <h3>Contact Us:</h3>
