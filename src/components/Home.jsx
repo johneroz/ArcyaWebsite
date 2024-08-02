@@ -31,6 +31,7 @@ function Home() {
       <header className="fade-in">
         <div className="header-subtitle">WELCOME TO</div>
         <h1>ARCYA COMMERCIAL CORPORATION</h1>
+        <p>We have been in the indjustry for more than 20 years.</p>
         <div className="arrow" onClick={scrollToContent}>
           <FontAwesomeIcon icon={faChevronDown} />
         </div>
@@ -39,7 +40,9 @@ function Home() {
       <section className="home-info">
         <div className="home-info-text">
           <h2>About Us</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed id semper risus in hendrerit gravida rutrum. Bibendum neque egestas congue quisque egestas diam in arcu. Consequat ac felis donec et odio pellentesque.</p>
+          <p>Arcya Commercial Corporation is a real estate company that focuses on leasing and developing properties. We have been in the industry for more than 20 years.
+             Our company's prime edge is the strong foundation of its projects from container vans up to their offered dormitory and condominium structures. We provide Warehouses,
+             Commercial and Residential units available for rent in Sta. Rosa, Laguna, Baguio, Mandaluyong, Fort and Manila.</p>
           <Link to="/about" className="learn-more">Learn More</Link>
         </div>
         <div className="home-info-image-container" onClick={() => handleImageClick(homeImage)}>
